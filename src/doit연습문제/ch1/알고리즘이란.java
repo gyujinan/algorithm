@@ -3,15 +3,17 @@ package doit연습문제.ch1;
 import java.util.Scanner;
 
 public class 알고리즘이란 {
-
-	static int Q1(int a, int b, int d) {
+		
+	static int Q1(int a, int b, int c, int d) {
 		int max = a;
-		if (max < b) {
-			max = b;
-		}
-		if (max < d) {
-			max = d;
-		}
+		
+		
+		if (max < b) max = b;
+		
+		if (max < c) max = c;
+		
+		if (max < d) max = d;
+		
 		return max;
 	}
 
