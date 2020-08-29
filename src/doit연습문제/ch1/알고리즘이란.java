@@ -93,8 +93,25 @@ public class 알고리즘이란 {
 	}
 
 	static int Q9(int a, int b) {
+		int start;
+		int end;
+		int sum = 0;
+		if(a<b) {
+			start = a;
+			end = b;
+		}else {
+			start = b;
+			end = a;
+		}
 		
-		return 0;
+		while(start <= end) {
+			
+			sum+=start;
+			
+			start++;
+		}
+		
+		return sum;
 	}
 
 	static void Q10() {
