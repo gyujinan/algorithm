@@ -3,17 +3,19 @@ package doit연습문제.ch1;
 import java.util.Scanner;
 
 public class 알고리즘이란 {
-		
+
 	static int Q1(int a, int b, int c, int d) {
 		int max = a;
-		
-		
-		if (max < b) max = b;
-		
-		if (max < c) max = c;
-		
-		if (max < d) max = d;
-		
+
+		if (max < b)
+			max = b;
+
+		if (max < c)
+			max = c;
+
+		if (max < d)
+			max = d;
+
 		return max;
 	}
 
@@ -96,21 +98,21 @@ public class 알고리즘이란 {
 		int start;
 		int end;
 		int sum = 0;
-		if(a<b) {
+		if (a < b) {
 			start = a;
 			end = b;
-		}else {
+		} else {
 			start = b;
 			end = a;
 		}
-		
-		while(start <= end) {
-			
-			sum+=start;
-			
+
+		while (start <= end) {
+
+			sum += start;
+
 			start++;
 		}
-		
+
 		return sum;
 	}
 
@@ -118,9 +120,9 @@ public class 알고리즘이란 {
 		Scanner stdIn = new Scanner(System.in);
 		int a;
 		int b;
-		System.out.print("a의 값 : ");
-		a = stdIn.nextInt();
 		do {
+			System.out.print("a의 값 : ");
+			a = stdIn.nextInt();
 			System.out.print("b의 값 : ");
 			b = stdIn.nextInt();
 			if (a >= b) {
@@ -136,10 +138,9 @@ public class 알고리즘이란 {
 		int count = 0;
 
 		do {
-			System.out.print("양의 정수 : ");
+			System.out.print("양의 정수를 입력하세요: ");
 			a = stdIn.nextInt();
-			if (a <= 0)
-				System.out.println("양의 정수를 입력하세요.");
+
 		} while (a <= 0);
 
 		while (a > 0) {
@@ -151,20 +152,31 @@ public class 알고리즘이란 {
 	}
 
 	static void Q12() {
+		System.out.print("   |");
+		for (int i = 1; i <= 9; i++)
+			System.out.printf("%3d", i);
+		System.out.println("\n---+---------------------------");
+
 		for (int i = 1; i <= 9; i++) {
-			System.out.print(i + "| ");
+			System.out.printf("%3d" + "|", i);
 			for (int j = 1; j <= 9; j++) {
-				System.out.print(i * j + " ");
+				System.out.printf("%3d", i * j);
 			}
 			System.out.println();
 		}
 	}
 
 	static void Q13() {
+
+		System.out.print("   |");
+		for (int i = 1; i <= 9; i++)
+			System.out.printf("%3d", i);
+		System.out.println("\n---+---------------------------");
+
 		for (int i = 1; i <= 9; i++) {
-			System.out.print(i + "| ");
+			System.out.printf("%3d" + "|", i);
 			for (int j = 1; j <= 9; j++) {
-				System.out.print(i + j + " ");
+				System.out.printf("%3d", i + j);
 			}
 			System.out.println();
 		}
@@ -187,12 +199,15 @@ public class 알고리즘이란 {
 	static void Q15_triangleLB(int n) {
 
 	}
+
 	static void Q15_triangleLU(int n) {
 
 	}
+
 	static void Q15_triangleRU(int n) {
 
 	}
+
 	static void Q15_triangleRB(int n) {
 
 	}
