@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class 요세푸스1158 {
+public class Josephus1158 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -18,7 +18,7 @@ public class 요세푸스1158 {
 		//int k = Integer.parseInt(tmp[1]);
 		
 		int index =k-1;
-		//int[] result = new int[n];index처리하기 싫으니 컬렉션을 사용
+		//int[] result = new int[n];index처리하기 싫으니 컬렉션�?� 사용
 		ArrayList result = new ArrayList();
 		
 		for(int i=1; i<=n; i++) {

@@ -1,8 +1,8 @@
-package doit연습문제.ch1;
+package doit;
 
 import java.util.Scanner;
 
-public class 알고리즘이란 {
+public class CH1 {
 
 	static int Q1(int a, int b, int c, int d) {
 		int max = a;
@@ -51,15 +51,15 @@ public class 알고리즘이란 {
 	}
 
 	static void Q5() {
-		// 조건문이 길어서?
+		// 조건문�?� 길어서?
 	}
 
 	static void Q6() {
 
 		Scanner stdIn = new Scanner(System.in);
 
-		System.out.println("1부터 n까지의 합을 합니다.");
-		System.out.print("n의 값: ");
+		System.out.println("1부터 n까지�?� 합�?� 합니다.");
+		System.out.print("n�?� 값: ");
 		int n = stdIn.nextInt();
 
 		int sum = 0;
@@ -69,7 +69,7 @@ public class 알고리즘이란 {
 			sum += i;
 			i++;
 		}
-		System.out.println("1부터" + n + "까지의 합은" + sum + "입니다.");
+		System.out.println("1부터" + n + "까지�?� 합�?�" + sum + "입니다.");
 		System.out.println("i: " + i);
 
 	}
@@ -121,12 +121,12 @@ public class 알고리즘이란 {
 		int a;
 		int b;
 		do {
-			System.out.print("a의 값 : ");
+			System.out.print("a�?� 값 : ");
 			a = stdIn.nextInt();
-			System.out.print("b의 값 : ");
+			System.out.print("b�?� 값 : ");
 			b = stdIn.nextInt();
 			if (a >= b) {
-				System.out.println("a보다 큰 값을 입력하세요!");
+				System.out.println("a보다 �?� 값�?� 입력하세요!");
 			}
 		} while (a >= b);
 		System.out.println("b - a는 " + (b - a) + "입니다.");
@@ -138,7 +138,7 @@ public class 알고리즘이란 {
 		int count = 0;
 
 		do {
-			System.out.print("양의 정수를 입력하세요: ");
+			System.out.print("양�?� 정수를 입력하세요: ");
 			a = stdIn.nextInt();
 
 		} while (a <= 0);
@@ -148,7 +148,7 @@ public class 알고리즘이란 {
 			count++;
 		}
 
-		System.out.println("그 수는 " + count + "자리입니다.");
+		System.out.println("그 수는 " + count + "�?리입니다.");
 	}
 
 	static void Q12() {
@@ -185,7 +185,7 @@ public class 알고리즘이란 {
 	static void Q14() {
 		Scanner stdIn = new Scanner(System.in);
 		int a;
-		System.out.println("사각형을 출력합니다.");
+		System.out.println("사�?형�?� 출력합니다.");
 		System.out.print("단 수: ");
 		a = stdIn.nextInt();
 		for (int i = 1; i <= a; i++) {

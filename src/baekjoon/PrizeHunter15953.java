@@ -1,10 +1,10 @@
-package baekjoon;//runtime err를 발생시켰다 왜 그런걸까?
+package baekjoon;//runtime err를 발�?시켰다 왜 그런걸까?
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class 상금헌터15953 {
+public class PrizeHunter15953 {
 
     public static int kakao2017(int rank) {
         int reward [] = {0, 5_000_000, 3_000_000, 2_000_000, 500_000, 300_000, 100_000};
@@ -46,7 +46,7 @@ public class 상금헌터15953 {
 
         String[] ranks = new String[times];
         
-        //↓runtime err를 발생시킨다. 왜 그럴까?
+        //↓runtime err를 발�?시킨다. 왜 그럴까?
         //BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         //Scanner in2 = new Scanner(System.in);
 
