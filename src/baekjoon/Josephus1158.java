@@ -18,7 +18,7 @@ public class Josephus1158 {
 		//int k = Integer.parseInt(tmp[1]);
 		
 		int index =k-1;
-		//int[] result = new int[n];index처리하기 싫으니 컬렉션�?� 사용
+		//int[] result = new int[n];
 		ArrayList result = new ArrayList();
 		
 		for(int i=1; i<=n; i++) {

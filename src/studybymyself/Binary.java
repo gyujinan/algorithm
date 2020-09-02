@@ -16,6 +16,20 @@ public class Binary {
 		
 		return binary;
 	}
+	
+	private static int cardConvR(int x, int r, char[] d) {
+		int digits = 0;
+		String num = "0123456789ABCDEF";
+		
+		do {
+			d[digits++]=num.charAt(x%r);
+			x=x/r;
+			
+		}while(x != 0);
+		return digits;
+		
+		
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

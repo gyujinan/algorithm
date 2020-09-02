@@ -51,7 +51,6 @@ public class CH1 {
 	}
 
 	static void Q5() {
-		// 조건문�?� 길어서?
 	}
 
 	static void Q6() {

@@ -1,4 +1,4 @@
-package baekjoon;//runtime err를 발�?시켰다 왜 그런걸까?
+package baekjoon;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -46,7 +46,6 @@ public class PrizeHunter15953 {
 
         String[] ranks = new String[times];
         
-        //↓runtime err를 발�?시킨다. 왜 그럴까?
         //BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         //Scanner in2 = new Scanner(System.in);
 
