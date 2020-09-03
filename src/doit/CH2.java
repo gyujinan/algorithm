@@ -154,6 +154,15 @@ public class CH2 {
 //		return (d);
 //	}
 	
+	private static int Q9(int y, int m, int d) {
+		
+		d -= mdays[Q8_isLeap(y)][m-1];
+		for(int i=m; i<12; m++) {
+			d += mdays[Q8_isLeap(y)][i];
+		}
+			
+		return d;
+	}
 	
 	
 
