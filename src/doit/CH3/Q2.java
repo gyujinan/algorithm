@@ -3,7 +3,7 @@ package doit.CH3;
 public class Q2 {
 	
 	private static void searchAndPrint(int a[], int key) {
-		System.out.print("   |");
+		System.out.printf("%4s","|");
 		for(int i=0;i<a.length;i++) {
 			
 			System.out.printf("%3d", i);
@@ -12,7 +12,7 @@ public class Q2 {
 		System.out.println("---+----------------------------------");
 		
 		for(int i=0;i<a.length;i++) {
-			System.out.print("   |");
+			System.out.printf("%4s","|");
 			for(int j=0;j<=i;j++) {
 				
 				if(i==j) {
