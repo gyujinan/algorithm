@@ -17,6 +17,11 @@ class IntAryQueue {
 	IntAryQueue(int capacity){
 		num = 0;
 		max = capacity;
+		try {
+			que = new int [max];
+		}catch(OutOfMemoryError e) {
+			max = 0;
+		}
 		
 	}
 	
