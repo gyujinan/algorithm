@@ -21,11 +21,15 @@ class IntQueue {
 		if(isFull()) {
 			throw new OverflowIntQueueException();
 		}
-		if(rear>=max) {
-			rear = 0;
-		}
+//		if(rear>=max) {
+//			rear = 0;
+//		}
+//		num++;
+//		que[rear++]=x;
+		
 		num++;
 		que[rear++]=x;
+		rear%=max;
 		
 		
 		return x;
@@ -36,12 +40,19 @@ class IntQueue {
 			throw new EmptyIntQueueException();
 		}
 		
-		if(front >= max) {
-			front = 0;
-		}
-		
+//		if(front >= max) {
+//			front = 0;
+//		}
+//		
+//		num--;
+//		return que[front++];
 		num--;
-		return que[front++];
+		int out = que[front++];
+		front%=max;
+		
+		return out;
+		
+		
 	}
 	
 	public int peek() {

@@ -21,11 +21,18 @@ class Gqueue<E> {
 		if(isFull()) {
 			throw new OverflowIntQueueException();
 		}
-		if(rear>=max) {
-			rear = 0;
-		}
-		num++;
+//		if(rear>=max) {
+//			rear = 0;
+//		}
+//		num++;
+//		que[rear++]=x;
+		
 		que[rear++]=x;
+		num++;
+		
+		if(rear == max) {
+			rear =0;
+		}
 		
 		
 		return x;
@@ -36,12 +43,18 @@ class Gqueue<E> {
 			throw new EmptyIntQueueException();
 		}
 		
-		if(front >= max) {
+//		if(front >= max) {
+//			front = 0;
+//		}
+//		
+//		num--;
+//		return que[front++];
+		num--;
+		E out = que[front];
+		if(++front==max) {
 			front = 0;
 		}
-		
-		num--;
-		return que[front++];
+		return out;
 	}
 	
 	public E peek() {
